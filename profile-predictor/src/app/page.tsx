@@ -1,7 +1,13 @@
-
-
 export default function Home() {
   return (
-<h1>hello world</h1>
+    <div>
+      <div>
+        <h1>Enter Your Name</h1>
+      </div>
+      <form>
+        <input type="text" placeholder="Type your name.."/>
+        <button type="submit">Enter</button>
+      </form>
+    </div>
   );
 }
