@@ -23,7 +23,8 @@ export default function Home() {
     
     "
     >
-      <div className="p-10
+      <div className="
+              p-10
               border-8
               border-blue-200
               rounded-2xl">
