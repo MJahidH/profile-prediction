@@ -15,7 +15,13 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="
+    border-4
+    border-yellow-500
+    min-h-screen
+    flex items-center
+    justify-center
+    ">
       <div>
         <h1>Enter Your Name</h1>
       </div>
