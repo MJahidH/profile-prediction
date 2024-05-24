@@ -15,17 +15,25 @@ export default function Home() {
   };
 
   return (
-    <div className="
-    border-4
-    border-yellow-500
+    <div
+      className="
     min-h-screen
     flex items-center
     justify-center
-    ">
-      <div>
-        <h1>Enter Your Name</h1>
-      </div>
-      <form onSubmit={handleSubmit}>
+    "
+    >
+      <div className="p-4">
+        <h1
+          className="
+        text-3xl
+        font-semibold
+        mb-4
+        "
+        >
+          Enter Your Name
+        </h1>
+      
+      <form className="space-y-3" onSubmit={handleSubmit}>
         <input
           onChange={(e) => {
             setInputValue(e.target.value);
@@ -33,9 +41,23 @@ export default function Home() {
           value={inputValue}
           type="text"
           placeholder="Type your name.."
+          className="
+          w-full  p-2
+          border border-gray-300 rounded"
         />
-        <button type="submit">Enter</button>
+        <button
+          className="
+        w-full
+        py-4
+        px-4
+         bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md focus:outline-none
+        "
+          type="submit"
+        >
+          Enter
+        </button>
       </form>
+      </div>
     </div>
   );
 }
