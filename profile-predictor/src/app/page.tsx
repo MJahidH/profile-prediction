@@ -20,20 +20,25 @@ export default function Home() {
     min-h-screen
     flex items-center
     justify-center
+    
     "
     >
-      <div className="p-4">
+      <div className="p-10
+              border-8
+              border-blue-200
+              rounded-2xl">
         <h1
           className="
         text-3xl
         font-semibold
         mb-4
+
         "
         >
           Enter Your Name
         </h1>
       
-      <form className="space-y-3" onSubmit={handleSubmit}>
+      <form className="space-y-10" onSubmit={handleSubmit}>
         <input
           onChange={(e) => {
             setInputValue(e.target.value);
