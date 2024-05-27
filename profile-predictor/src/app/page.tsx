@@ -23,11 +23,13 @@ export default function Home() {
     
     "
     >
-      <div className="
+      <div
+        className="
               p-10
               border-8
               border-blue-200
-              rounded-2xl">
+              rounded-2xl"
+      >
         <h1
           className="
         text-3xl
@@ -38,31 +40,31 @@ export default function Home() {
         >
           Enter Your Name
         </h1>
-      
-      <form className="space-y-10" onSubmit={handleSubmit}>
-        <input
-          onChange={(e) => {
-            setInputValue(e.target.value);
-          }}
-          value={inputValue}
-          type="text"
-          placeholder="Type your name.."
-          className="
+
+        <form className="space-y-10" onSubmit={handleSubmit}>
+          <input
+            onChange={(e) => {
+              setInputValue(e.target.value);
+            }}
+            value={inputValue}
+            type="text"
+            placeholder="Type your name.."
+            className="
           w-full  p-2
           border border-gray-300 rounded"
-        />
-        <button
-          className="
+          />
+          <button
+            className="
         w-full
         py-4
         px-4
          bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md focus:outline-none
         "
-          type="submit"
-        >
-          Enter
-        </button>
-      </form>
+            type="submit"
+          >
+            Enter
+          </button>
+        </form>
       </div>
     </div>
   );
